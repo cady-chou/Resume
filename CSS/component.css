@@ -83,14 +83,14 @@
 }
 
 .btn--primary {
-    background-color: #eb7340;
+    background-color: #ffc23e;
     color: #ffffff;
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
 }
 
 .btn--primary:hover,
 .btn--primary:active {
-    background-color: #ff5c16;
+    background-color: #ff9914;
     color: #ffffff;
     /* border: 2px solid #eb7340; */
     box-sizing: border-box;
@@ -165,11 +165,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(to top, #36607e 0%, #5c87a8 100%);
-    background-size: cover;
-    background-color: #3e6c8d;
-    background-position: right;
-    background-repeat: no-repeat;
+    background-color: #6cb7ca;
 }
 
 .hero__bg {
@@ -178,14 +174,24 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url(../images/A5638E12-DF76-417F-8C6D-CE99F2200768.jpg);
+    background-image: url(../images/IMG_6362.JPG);
 }
 
-.hero__bg:before {
+.hero__bg:after {
     content: "";
-    height: 100%;
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.hero__bg:hover:after {
+    background-color: rgba(0, 0, 0, 0);
 }
 
 
@@ -242,10 +248,16 @@
 .nav-bg {
     background-color: rgba(255, 255, 255, 0.4);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 2;
 }
 
 .navbar-toggler {
-    color: rgba(0, 0, 0, 0.4);
+    color: #ffffff;
+    border: none !important;
+}
+
+.navbar-toggler:hover {
+    color: #293f76;
 }
 
 .navbar-nav {
@@ -303,6 +315,7 @@
 .hero {
     padding-top: 10vh;
     padding-bottom: 20vh;
+    z-index: 2;
 }
 
 @media (max-width: 768px) {
@@ -658,7 +671,7 @@
 span {
     text-align: center;
     opacity: 0;
-    color: #ffffff;
+    color: #383838;
 }
 
 
@@ -667,6 +680,7 @@ span {
 .mail-btn {
     width: 48px;
     height: 52px;
+    background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
     border-radius: 100% !important;
     display: inline-block;
     margin: 0;
@@ -675,7 +689,7 @@ span {
     font-weight: 400;
     text-decoration: none;
     text-align: center;
-    color: black;
+    color: #000000;
     letter-spacing: 0;
     font-family: 'Raleway', 'Helvetica', 'roboto', arial, sans-serif;
     transition: all 0.3s;
@@ -696,8 +710,8 @@ span {
     opacity: 1;
     font-size: 20px;
     font-weight: 600;
-    color: #ffffff;
-    transition: all 0.1s 0.3s;
+    color: #383838;
+    transition: all 0.1s 0.2s;
 }
 
 
