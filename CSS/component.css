@@ -641,7 +641,8 @@
 }
 
 .work-item__title {
-    font-size: 40px;
+    font-size: 36px;
+    font-weight: 500;
     font-family: 'Raleway', 'Helvetica', 'roboto', arial, sans-serif;
     color: #555454;
 }
