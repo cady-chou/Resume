@@ -33,33 +33,6 @@
 /* $Elements
 ---------------------------*/
 
-
-/* .u-btn {
-    display: inline-block;
-    vertical-align: top;
-    position: relative;
-    margin: 0;
-    line-height: 36px;
-    font-size: 14px;
-    padding: 6px 16px;
-    box-sizing: border-box;
-    border: 2px solid #cee3da;
-    outline: 0;
-    font-weight: 600;
-    font-family: 'Raleway', 'Helvetica', 'roboto', arial, sans-serif;
-    letter-spacing: 0;
-    text-decoration: none;
-    text-align: center;
-    background-color: rosybrown;
-    color: #555454;
-    border-radius: 30px;
-    cursor: pointer;
-    overflow: hidden;
-    user-select: none;
-    -webkit-user-drag: none;
-    transition: all 0.3s;
-} */
-
 .badge-pill {
     box-sizing: border-box;
     padding: 12px 20px !important;
@@ -246,9 +219,16 @@
 ---------------------*/
 
 .nav-bg {
-    background-color: rgba(255, 255, 255, 0.4);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    z-index: 2;
+    position: fixed;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    z-index: 3;
+    transition: all 0.3s;
+}
+
+.scroll-nav {
+    background-color: #6cb7cac9;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
 .navbar-toggler {
@@ -270,7 +250,6 @@
 
 .nav-item {
     padding-right: 12px;
-    font-weight: 500;
 }
 
 .nav-link {
@@ -326,7 +305,7 @@
 }
 
 .hero__heading {
-    font-size: 120px;
+    font-size: 116px;
     font-weight: 900;
     color: #ffffff;
     letter-spacing: -4px;
@@ -335,6 +314,16 @@
 @media (max-width: 768px) {
     .hero__heading {
         font-size: 60px;
+    }
+}
+
+@media (max-width: 426px) {
+    .hero__heading {
+        font-size: 42px;
+        letter-spacing: -1px;
+    }
+    .navbar-nav {
+        font-size: 14px;
     }
 }
 
@@ -391,8 +380,12 @@
 /* $Skill
 ---------------------------*/
 
+.skill {
+    padding-top: 46px;
+}
+
 .skill-group {
-    padding-top: 40px;
+    padding-top: 14px;
     padding-bottom: 70px;
 }
 
@@ -423,16 +416,6 @@
     }
 }
 
-
-/* 
-.skill-card__inner {
-    padding: 24px;
-    padding-left: 48px;
-    border-radius: 4px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
-    background-color: #fefefe;
-} */
-
 .skill-card__title {
     color: #293f76;
     font-weight: 900;
@@ -443,28 +426,6 @@
     font-size: 18px;
     line-height: 36px;
 }
-
-
-/* .skill-card__icon {
-    height: 64px;
-    width: 64px;
-    border-radius: 50%;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
-    background-color: #fefefe;
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%)
-}
-
-.skill-card__icon .image {
-    height: 60%;
-    width: 60%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-} */
 
 
 /*-------------------------*/
