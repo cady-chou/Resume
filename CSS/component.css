@@ -319,7 +319,7 @@
 
 @media (max-width: 426px) {
     .hero__heading {
-        font-size: 42px;
+        font-size: 50px;
         letter-spacing: -1px;
     }
     .navbar-nav {
